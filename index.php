@@ -232,30 +232,30 @@
       }
 
       // NOTE: UNCOMMENT THIS TO JUST DISPLAY THE RECTANGLES
-      // function createGraveColumn(startLat, startLng, numGraves) {
-      //   // Loop to create the graves in a column
-      //   for (let i = 0; i < numGraves; i++) {
-      //     const lat = startLat + (i * (graveHeight + spacing)); // Add spacing between graves
-      //     const lng = startLng
-      //     // Define the bounds for each rectangle (grave)
-      //     const bounds = [
-      //       [lat - graveHeight / 2, lng - graveWidth / 2], // Bottom-left corner
-      //       [lat + graveHeight / 2, lng + graveWidth / 2] // Top-right corner
-      //     ]
-      //     // Get a random status and its corresponding color
-      //     const status = getRandomStatus();
-      //     const color = statuses[status]
-      //     // Add the rectangle for the grave to the map
-      //     const grave = L.rectangle(bounds, {
-      //       color: color, // Border color based on status
-      //       weight: 2,
-      //       fillColor: color, // Fill color based on status
-      //       fillOpacity: 0.5
-      //     }).addTo(map)
-      //     // Add a popup to show the status of the grave
-      //     grave.bindPopup(`Status: ${status}`);
-      //   }
-      // }
+      function createGraveColumn(startLat, startLng, numGraves) {
+        // Loop to create the graves in a column
+        for (let i = 0; i < numGraves; i++) {
+          const lat = startLat + (i * (graveHeight + spacing)); // Add spacing between graves
+          const lng = startLng
+          // Define the bounds for each rectangle (grave)
+          const bounds = [
+            [lat - graveHeight / 2, lng - graveWidth / 2], // Bottom-left corner
+            [lat + graveHeight / 2, lng + graveWidth / 2] // Top-right corner
+          ]
+          // Get a random status and its corresponding color
+          const status = getRandomStatus();
+          const color = statuses[status]
+          // Add the rectangle for the grave to the map
+          const grave = L.rectangle(bounds, {
+            color: color, // Border color based on status
+            weight: 2,
+            fillColor: color, // Fill color based on status
+            fillOpacity: 0.5
+          }).addTo(map)
+          // Add a popup to show the status of the grave
+          grave.bindPopup(`Status: ${status}`);
+        }
+      }
 
       // NOTE: UNCOMMENT THIS TO INSERT TO THE DATABASE
       // function createGraveColumn(startLat, startLng, numGraves, phaseId, lawnId, rowId) {
@@ -300,162 +300,218 @@
 
       const columnSpacing = 0.0000095;
 
-      // Phase 1 (Should contain approximately 446 graves)
+      // Phase 1 Lawn C (Should contain approximately 549 graves)
       const startLat1 = 14.8715855;
       const startLng1 = 120.9770481;
       const numGraves1 = 12;
       createGraveColumn(startLat1, startLng1, numGraves1, 1, "C", 1);
 
-      const startLat2 = 14.8714285;
+      const startLat2 = 14.8714600;
       const startLng2 = startLng1 + columnSpacing;
-      const numGraves2 = 19;
+      const numGraves2 = 25;
       createGraveColumn(startLat2, startLng2, numGraves2, 1, "C", 2);
 
-      const startLat3 = 14.8714275;
+      const startLat3 = 14.871420;
       const startLng3 = startLng2 + columnSpacing;
-      const numGraves3 = 13;
+      const numGraves3 = 29;
       createGraveColumn(startLat3, startLng3, numGraves3, 1, "C", 3);
-
-      const startLat4 = 14.8714235;
+      
+      const startLat4 = 14.871420;
       const startLng4 = startLng3 + columnSpacing;
-      const numGraves4 = 13;
+      const numGraves4 = 29;
       createGraveColumn(startLat4, startLng4, numGraves4, 1, "C", 4);
-
-      const startLat5 = 14.8714205;
+      
+      const startLat5 = 14.871420;
       const startLng5 = startLng4 + columnSpacing;
-      const numGraves5 = 14;
+      const numGraves5 = 29;
       createGraveColumn(startLat5, startLng5, numGraves5, 1, "C", 5);
 
-      const startLat6 = 14.8714155;
+      const startLat6 = 14.871420;
       const startLng6 = startLng5 + columnSpacing;
-      const numGraves6 = 14;
+      const numGraves6 = 29;
       createGraveColumn(startLat6, startLng6, numGraves6, 1, "C", 6);
 
-      const startLat7 = 14.8714155;
+      const startLat7 = 14.871420;
       const startLng7 = startLng6 + columnSpacing;
-      const numGraves7 = 14;
+      const numGraves7 = 30;
       createGraveColumn(startLat7, startLng7, numGraves7, 1, "C", 7);
 
-      const startLat8 = 14.8714155;
+      const startLat8 = 14.871420;
       const startLng8 = startLng7 + columnSpacing;
-      const numGraves8 = 14;
+      const numGraves8 = 30;
       createGraveColumn(startLat8, startLng8, numGraves8, 1, "C", 8);
 
-      const startLat9 = 14.8714090;
+      const startLat9 = 14.871420;
       const startLng9 = startLng8 + columnSpacing;
-      const numGraves9 = 15;
+      const numGraves9 = 30;
       createGraveColumn(startLat9, startLng9, numGraves9, 1, "C", 9);
 
-      const startLat10 = 14.8714090;
+      const startLat10 = 14.871420;
       const startLng10 = startLng9 + columnSpacing;
-      const numGraves10 = 15;
+      const numGraves10 = 30;
       createGraveColumn(startLat10, startLng10, numGraves10, 1, "C", 10);
 
-      const startLat11 = 14.8714090;
+      const startLat11 = 14.871420;
       const startLng11 = startLng10 + columnSpacing;
-      const numGraves11 = 15;
+      const numGraves11 = 30;
       createGraveColumn(startLat11, startLng11, numGraves11, 1, "C", 11);
 
-      const startLat12 = 14.8714120;
+      const startLat12 = 14.871420;
       const startLng12 = startLng11 + columnSpacing;
-      const numGraves12 = 15;
+      const numGraves12 = 30;
       createGraveColumn(startLat12, startLng12, numGraves12, 1, "C", 12);
 
-      const startLat13 = 14.8714120;
+      const startLat13 = 14.871420;
       const startLng13 = startLng12 + columnSpacing;
-      const numGraves13 = 15;
+      const numGraves13 = 31;
       createGraveColumn(startLat13, startLng13, numGraves13, 1, "C", 13);
 
-      const startLat14 = 14.8714100;
+      const startLat14 = 14.871420;
       const startLng14 = startLng13 + columnSpacing;
-      const numGraves14 = 15;
+      const numGraves14 = 31;
       createGraveColumn(startLat14, startLng14, numGraves14, 1, "C", 14);
 
-      const startLat15 = 14.8714100;
+      const startLat15 = 14.871420;
       const startLng15 = startLng14 + columnSpacing;
-      const numGraves15 = 15;
+      const numGraves15 = 31;
       createGraveColumn(startLat15, startLng15, numGraves15, 1, "C", 15);
 
-      const startLat16 = 14.8714100;
+      const startLat16 = 14.871420;
       const startLng16 = startLng15 + columnSpacing;
-      const numGraves16 = 15;
+      const numGraves16 = 31;
       createGraveColumn(startLat16, startLng16, numGraves16, 1, "C", 16);
 
-      const startLat17 = 14.8714100;
+      const startLat17 = 14.871420;
       const startLng17 = startLng16 + columnSpacing;
-      const numGraves17 = 15;
+      const numGraves17 = 31;
       createGraveColumn(startLat17, startLng17, numGraves17, 1, "C", 17);
 
-      const startLat18 = 14.8714100;
+      const startLat18 = 14.871420;
       const startLng18 = startLng17 + columnSpacing;
-      const numGraves18 = 15;
+      const numGraves18 = 31;
       createGraveColumn(startLat18, startLng18, numGraves18, 1, "C", 18);
 
-      const startLat19 = 14.8714100;
+      const startLat19 = 14.871420;
       const startLng19 = startLng18 + columnSpacing;
-      const numGraves19 = 15;
+      const numGraves19 = 31;
       createGraveColumn(startLat19, startLng19, numGraves19, 1, "C", 19);
 
-      const startLat20 = 14.8714100;
+      const startLat20 = 14.871415;
       const startLng20 = startLng19 + columnSpacing;
-      const numGraves20 = 15;
+      const numGraves20 = 32;
       createGraveColumn(startLat20, startLng20, numGraves20, 1, "C", 20);
 
-      const startLat21 = 14.8714100;
+      const startLat21 = 14.871415;
       const startLng21 = startLng20 + columnSpacing;
-      const numGraves21 = 15;
+      const numGraves21 = 32;
       createGraveColumn(startLat21, startLng21, numGraves21, 1, "C", 21);
 
-      const startLat22 = 14.8714100;
+      const startLat22 = 14.871415;
       const startLng22 = startLng21 + columnSpacing;
-      const numGraves22 = 16;
+      const numGraves22 = 33;
       createGraveColumn(startLat22, startLng22, numGraves22, 1, "C", 22);
 
-      const startLat23 = 14.8714100;
+      const startLat23 = 14.871415;
       const startLng23 = startLng22 + columnSpacing;
-      const numGraves23 = 16;
+      const numGraves23 = 33;
       createGraveColumn(startLat23, startLng23, numGraves23, 1, "C", 23);
 
-      const startLat24 = 14.8714100;
+      const startLat24 = 14.871400;
       const startLng24 = startLng23 + columnSpacing;
-      const numGraves24 = 16;
+      const numGraves24 = 34;
       createGraveColumn(startLat24, startLng24, numGraves24, 1, "C", 24);
 
-      const startLat25 = 14.8714100;
+      const startLat25 = 14.871405;
       const startLng25 = startLng24 + columnSpacing;
-      const numGraves25 = 16;
+      const numGraves25 = 34;
       createGraveColumn(startLat25, startLng25, numGraves25, 1, "C", 25);
 
-      const startLat26 = 14.8714100;
+      const startLat26 = 14.871400 ;
       const startLng26 = startLng25 + columnSpacing;
-      const numGraves26 = 16;
+      const numGraves26 = 35;
       createGraveColumn(startLat26, startLng26, numGraves26, 1, "C", 26);
 
-      const startLat27 = 14.8714100;
+      const startLat27 = 14.871400;
       const startLng27 = startLng26 + columnSpacing;
-      const numGraves27 = 16;
+      const numGraves27 = 35;
       createGraveColumn(startLat27, startLng27, numGraves27, 1, "C", 27);
 
-      const startLat28 = 14.8714100;
+      const startLat28 = 14.871400;
       const startLng28 = startLng27 + columnSpacing;
-      const numGraves28 = 16;
+      const numGraves28 = 35;
       createGraveColumn(startLat28, startLng28, numGraves28, 1, "C", 28);
 
-      const startLat29 = 14.8714100;
+      const startLat29 = 14.871400;
       const startLng29 = startLng28 + columnSpacing;
-      const numGraves29 = 16;
+      const numGraves29 = 35;
       createGraveColumn(startLat29, startLng29, numGraves29, 1, "C", 29);
 
-      const startLat30 = 14.8714100;
+      const startLat30 = 14.871400;
       const startLng30 = startLng29 + columnSpacing;
-      const numGraves30 = 16;
+      const numGraves30 = 36;
       createGraveColumn(startLat30, startLng30, numGraves30, 1, "C", 30);
 
-      const startLat31 = 14.8715800;
+      const startLat31 = 14.871400;
       const startLng31 = startLng30 + columnSpacing;
-      const numGraves31 = 9;
+      const numGraves31 = 36;
       createGraveColumn(startLat31, startLng31, numGraves31, 1, "C", 31);
 
+      const startLat32 = 14.871400;
+      const startLng32 = startLng31 + columnSpacing;
+      const numGraves32 = 36;
+      createGraveColumn(startLat32, startLng32, numGraves32, 1, "C", 32);
+      
+      const startLat33 = 14.871400;
+      const startLng33 = startLng32 + columnSpacing;
+      const numGraves33 = 36;
+      createGraveColumn(startLat33, startLng33, numGraves33, 1, "C", 33);
+
+      const startLat34 = 14.871400;
+      const startLng34 = startLng33 + columnSpacing;
+      const numGraves34 = 36;
+      createGraveColumn(startLat34, startLng34, numGraves34, 1, "C", 34);
+
+      const startLat35 = 14.871400;
+      const startLng35 = startLng34 + columnSpacing;
+      const numGraves35 = 36;
+      createGraveColumn(startLat35, startLng35, numGraves35, 1, "C", 35);
+
+      const startLat36 = 14.871400;
+      const startLng36 = startLng35 + columnSpacing;
+      const numGraves36 = 37;
+      createGraveColumn(startLat36, startLng36, numGraves36, 1, "C", 36);
+
+      const startLat37 = 14.871400;
+      const startLng37 = startLng36 + columnSpacing;
+      const numGraves37 = 37;
+      createGraveColumn(startLat37, startLng37, numGraves37, 1, "C", 37);
+
+      const startLat38 = 14.871400;
+      const startLng38 = startLng37 + columnSpacing;
+      const numGraves38 = 37;
+      createGraveColumn(startLat38, startLng38, numGraves38, 1, "C", 38);
+
+      const startLat39 = 14.871400;
+      const startLng39 = startLng38 + columnSpacing;
+      const numGraves39 = 37;
+      createGraveColumn(startLat39, startLng39, numGraves39, 1, "C", 39);
+
+      const startLat40 = 14.871400;
+      const startLng40 = startLng39 + columnSpacing;
+      const numGraves40 = 38;
+      createGraveColumn(startLat40, startLng40, numGraves40, 1, "C", 40);
+
+      const startLat41 = 14.871400;
+      const startLng41 = startLng40 + columnSpacing;
+      const numGraves41 = 38;
+      createGraveColumn(startLat41, startLng41, numGraves41, 1, "C", 41);
+
+      const startLat42 = 14.871400;
+      const startLng42 = startLng41 + columnSpacing;
+      const numGraves42 = 38;
+      createGraveColumn(startLat42, startLng42, numGraves42, 1, "C", 42);
+
+      
       // Add legend to the map
       const legend = L.control({
         position: "bottomright"
