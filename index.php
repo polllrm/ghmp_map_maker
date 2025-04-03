@@ -867,13 +867,104 @@
       createGraveColumn(startLat110, startLng110, numGraves110, 1, "F", 110);
 
 
-      // Phase 1 Lawn G (Should contain approximately 399 graves)
-      const startLat111 = 14.871285;  // Adjusted latitude
-      const startLng111 = startLng110 + columnSpacing + columnSpacing + columnSpacing + columnSpacing
-        + columnSpacing + columnSpacing;
-      const numGraves111 = 15; // adjust the graves
+       // Phase 1 Lawn G (Should contain approximately 628 graves)
+      const startLat111 = 14.871205;  // Adjusted latitude
+      const startLng111 = startLng110 + columnSpacing + columnSpacing + columnSpacing + columnSpacing;
+      const numGraves111 = 2; // adjust the graves
       createGraveColumn(startLat111, startLng111, numGraves111, 1, "G", 111);
 
+      const startLat112 = 14.871153;  // Adjusted latitude
+      const startLng112 = startLng111 + columnSpacing;
+      const numGraves112 = 7; // adjust the graves
+      createGraveColumn(startLat112, startLng112, numGraves112, 1, "G", 112);
+
+      const startLat113 = 14.871073;  // Adjusted latitude (moved further south)
+      const startLng113 = startLng112 + columnSpacing;
+      const numGraves113 = 15; // adjust the graves
+      createGraveColumn(startLat113, startLng113, numGraves113, 1, "G", 113);
+
+      const startLat114 = 14.8710023;  // Adjusted latitude (moved further south)14.871168755904218, 120.97827654274222
+      const startLng114 = startLng113 + columnSpacing;
+      const numGraves114 = 22; // adjust the graves
+      createGraveColumn(startLat114, startLng114, numGraves114, 1, "G", 114);
+
+      const startLat115 = 14.870911;  // Adjusted latitude (moved further south)
+      const startLng115 = startLng114 + columnSpacing;
+      const numGraves115 = 31; // adjust the graves
+      createGraveColumn(startLat115, startLng115, numGraves115, 1, "G", 115);
+
+      const startLat116 = 14.870850;  // Adjusted latitude (moved further south)
+      const startLng116 = startLng115 + columnSpacing;
+      const numGraves116 = 37; // adjust the graves
+      createGraveColumn(startLat116, startLng116, numGraves116, 1, "G", 116);
+
+      const startLat117 = 14.870849;  // Adjusted latitude (moved further south)
+      const startLng117 = startLng116 + columnSpacing;
+      const numGraves117 = 37; // adjust the graves
+      createGraveColumn(startLat117, startLng117, numGraves117, 1, "G", 117);
+
+      const startLat118 = 14.870848;  // Adjusted latitude (moved further south)
+      const startLng118 = startLng117 + columnSpacing;
+      const numGraves118 = 37; // adjust the graves
+      createGraveColumn(startLat118, startLng118, numGraves118, 1, "G", 118);
+
+      const startLat119 = 14.870845;  // Adjusted latitude (moved further south)
+      const startLng119 = startLng118 + columnSpacing;
+      const numGraves119 = 37; // adjust the graves
+      createGraveColumn(startLat119, startLng119, numGraves119, 1, "G", 119);
+
+      const startLat120 = 14.870844;  // Adjusted latitude (moved further south)
+      const startLng120 = startLng119 + columnSpacing;
+      const numGraves120 = 37; // adjust the graves
+      createGraveColumn(startLat120, startLng120, numGraves120, 1, "G", 120);
+
+      const startLat121 = 14.870843;  // Adjusted latitude (moved further south)
+      const startLng121 = startLng120 + columnSpacing;
+      const numGraves121 = 37; // adjust the graves
+      createGraveColumn(startLat121, startLng121, numGraves121, 1, "G", 121);
+
+      const startLat122 = 14.870843;  // Adjusted latitude (moved further south)
+      const startLng122 = startLng121 + columnSpacing;
+      const numGraves122 = 37; // adjust the graves
+      createGraveColumn(startLat122, startLng122, numGraves122, 1, "G", 122);
+    
+      const startLat123 = 14.870843;  // Adjusted latitude (moved further south)
+      const startLng123 = startLng122 + columnSpacing;
+      const numGraves123 = 37; // adjust the graves
+      createGraveColumn(startLat123, startLng123, numGraves123, 1, "G", 123);
+    
+      const startLat124 = 14.870840;  // Adjusted latitude (moved further south)
+      const startLng124 = startLng123 + columnSpacing;
+      const numGraves124 = 32; // adjust the graves
+      createGraveColumn(startLat124, startLng124, numGraves124, 1, "G", 124);
+    
+      const startLat125 = 14.870840;  // Same latitude as startLat123
+      const startLng125 = startLng124 + columnSpacing; // Increment from the previous column's longitude
+      const numGraves125 = 25; // Adjust the graves
+      createGraveColumn(startLat125, startLng125, numGraves125, 1, "G", 125);
+
+      const startLat126 = 14.870838;  // Same latitude as startLat123
+      const startLng126 = startLng125 + columnSpacing;
+      const numGraves126 = 18; // Adjust the graves
+      createGraveColumn(startLat126, startLng126, numGraves126, 1, "G", 126);
+
+      const startLat127 = 14.870837;  // Same latitude as startLat123
+      const startLng127 = startLng126 + columnSpacing;
+      const numGraves127 = 9; // Adjust the graves
+      createGraveColumn(startLat127, startLng127, numGraves127, 1, "G", 127);
+
+      const startLat128 = 14.870833;  // Same latitude as startLat123
+      const startLng128 = startLng127 + columnSpacing;
+      const numGraves128 = 2; // Adjust the graves
+      createGraveColumn(startLat128, startLng128, numGraves128, 1, "G", 128);
+
+
+
+       // Phase 1 Lawn H (Should contain approximately 628 graves)
+      const startLat129 = 14.871163;  // Adjusted latitude
+      const startLng129 = startLng128 + columnSpacing;
+      const numGraves129 = 10; // adjust the graves
+      createGraveColumn(startLat129, startLng129, numGraves129, 1, "H", 129);
 
 
       var latlngs = [
