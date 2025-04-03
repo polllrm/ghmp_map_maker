@@ -867,11 +867,11 @@
       createGraveColumn(startLat110, startLng110, numGraves110, 1, "F", 110);
 
 
-      // Phase 1 Lawn G (Should contain approximately 628 graves)
-      const startLat111 = 14.871400;  // Adjusted latitude
+      // Phase 1 Lawn G (Should contain approximately 399 graves)
+      const startLat111 = 14.871285;  // Adjusted latitude
       const startLng111 = startLng110 + columnSpacing + columnSpacing + columnSpacing + columnSpacing
-        + columnSpacing + columnSpacing + columnSpacing + columnSpacing;
-      const numGraves111 = 47; // adjust the graves
+        + columnSpacing + columnSpacing;
+      const numGraves111 = 15; // adjust the graves
       createGraveColumn(startLat111, startLng111, numGraves111, 1, "G", 111);
 
 
@@ -914,29 +914,54 @@
         opacity: 0.7          // Line opacity
       }).addTo(map);
 
+      var latlngs4 = [ 
+        [14.870823588321286, 120.9785129174872], // 14.870840588321286, 120.97851726174872
+        [14.870825668879982, 120.9787136423956] // 14.870825668879982, 120.9787216423956
+      ];
+
+      var polyline = L.polyline(latlngs4, {
+        color: 'blue',        // Line color
+        weight: 4,            // Line thickness
+        opacity: 0.7          // Line opacity
+      }).addTo(map);
+
+      var latlngs5 = [
+        [14.87115007516071, 120.9788480419537], //14.87111007516071, 120.9788480419537
+        [14.870514957636505, 120.97898562500829]  //14.870514957636505, 120.97898562500829
+      ];
+
+      // Create a polyline (line) from the coordinates
+      var polyline = L.polyline(latlngs5, {
+        color: 'blue',        // Line color
+        weight: 4,            // Line thickness
+        opacity: 0.7          // Line opacity
+      }).addTo(map);
 
 
+      var latlngs6 = [
+        [14.870825765570137, 120.97871271436804], //14.870839765570137, 120.97871271436804
+        [14.87083322581791, 120.97891570575337]  //14.87083322581791, 120.97891570575337
+      ];
 
+      // Create a polyline (line) from the coordinates
+      var polyline = L.polyline(latlngs6, {
+        color: 'blue',        // Line color
+        weight: 4,            // Line thickness
+        opacity: 0.7          // Line opacity
+      }).addTo(map);
 
-      // const startLat39 = 14.871400;
-      // const startLng39 = startLng38 + columnSpacing;
-      // const numGraves39 = 37;
-      // createGraveColumn(startLat39, startLng39, numGraves39, 1, "A", 39);
+      var latlngs6 = [
+        [14.87083322581791, 120.97891570575337], //14.870839765570137, 120.97871271436804
+        [14.870831426642383, 120.97911997443785] //14.870811426642383, 120.97912997443785
+      ];
 
-      // const startLat40 = 14.871400;
-      // const startLng40 = startLng39 + columnSpacing;
-      // const numGraves40 = 38;
-      // createGraveColumn(startLat40, startLng40, numGraves40, 1, "A", 40);
+      // Create a polyline (line) from the coordinates
+      var polyline = L.polyline(latlngs6, {
+        color: 'blue',        // Line color
+        weight: 4,            // Line thickness
+        opacity: 0.7          // Line opacity
+      }).addTo(map);
 
-      // const startLat41 = 14.871400;
-      // const startLng41 = startLng40 + columnSpacing;
-      // const numGraves41 = 38;
-      // createGraveColumn(startLat41, startLng41, numGraves41, 1, "A", 41);
-
-      // const startLat42 = 14.871400;
-      // const startLng42 = startLng41 + columnSpacing;
-      // const numGraves42 = 38;
-      // createGraveColumn(startLat42, startLng42, numGraves42, 1, "A", 42);
 
 
       // Add legend to the map
